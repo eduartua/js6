@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <script>
+        //Main benefits
+        // More concise than regular functions
+        // Implicit returns - nifty one-liners
+        // Doesn't rebin the value of this
+        const nombres = ['Eduar', 'María', 'Nino'];
+
+        // Lets add 'Tua' to the array
+
+        const nombresCompletos = nombres.map(function(name) {
+            return `${name} Tua`;
+        });
+
+        const nombresCompletos2 = nombres.map((name) => {
+            return `${name} Tua`;
+        });
+
+        const nombresCompletos3 = nombres.map(name => {
+            return `${name} Tua`;
+        });
+
+        const nombresCompletos4 = nombres.map(name => `${name} Tua`);
+
+        const nombresCompletos5 = nombres.map(() => `Buen Tua`);
+
+        console.log(nombresCompletos5);
+
+        const saluda = (name) => console.log(`Hola ${name}!`);
+        saluda('Eduar')
+
+        // Arrow functions are always anonymous functions 
+        
+
+    </script>
+</body>
+</html>
