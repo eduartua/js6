@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <script>
+        const carrera = 'Maratón Tigran';
+        const ganadores = ['Eduar', 'María', 'Nino'];
+
+        // We use parenthesis on the explicit return if we want to return
+        // an object. It does not take the curli braces as a function block
+
+        const gan = ganadores.map((ganador, i) => ({ nombre: ganador, lugar: i, carrera: carrera}));
+
+        const gan2 = ganadores.map((ganador, i) => ({ nombre: ganador, lugar: i, carrera}));
+
+        const edades = [12, 34, 25, 36, 65, 75, 52, 23];
+
+        const viejos = edades.filter(edad => edad > 50);
+
+        console.log(viejos);
+
+        //console.table(gan);
+        
+
+    </script>
+</body>
+</html>
