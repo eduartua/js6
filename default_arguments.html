@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Default Arguments</title>
+</head>
+<body>
+    <script>
+        function calcularFactura(total, impuesto = 0.16, propina = 0.15) {
+            return total + (total * impuesto) + (total * propina);
+        }
+
+        const totalFactura = calcularFactura(100, undefined, .25);
+        console.log(totalFactura);
+        
+    </script>
+</body>
+</html>
